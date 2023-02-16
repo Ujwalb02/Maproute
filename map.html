@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>router</title>
+    <script src="https://kit.fontawesome.com/3056e9eccd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300;400&amp;display=swap" rel="stylesheet">
+    <!-- css  -->
+    <link rel="stylesheet" href="map.css">
+    <!-- leaflet libray css  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="location">
+            <div class="logo">
+                <div class="logo_image_div">
+                    <img src="route.png" alt="Failed to load" >
+                </div>
+                <h1 class="title">MapRoute</h1>
+            </div>
+            <form action="">
+                <div class="combine">
+
+                    <input class="start_point" type="text" placeholder="Start location">
+                    <div class="current_location">
+                        <img src="location-targeting.png" alt="Failed to load image">
+                    </div>
+                    <div class="autocomplete">
+                        <div class="auto1">kottigepalya </div>
+                        <div class="auto1">dibburahalli</div>
+                        <!-- <div class="auto1"></div> -->
+                    </div>
+
+                </div>
+                <input class="end_point" type="text" placeholder="End location">
+                <button class="route">Enter</button>
+            </form>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="map.js"></script>
+    
+    <!-- leaflet library js  -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <!-- leaflet search js  -->
+     
+</body>
+</html>
