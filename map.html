@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="map.css">
     <!-- leaflet libray css  -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
+    <!-- leaflet routing machine css  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     
     
 </head>
@@ -27,20 +30,18 @@
             </div>
             <form action="">
                 <div class="combine">
-
                     <input class="start_point" type="text" placeholder="Start location">
                     <div class="current_location">
                         <img src="location-targeting.png" alt="Failed to load image">
                     </div>
-                    <div class="autocomplete">
-                        <div class="auto1">kottigepalya </div>
-                        <div class="auto1">dibburahalli</div>
-                        <!-- <div class="auto1"></div> -->
+                    <div class="autocomplete autocomplete1">
                     </div>
-
                 </div>
-                <input class="end_point" type="text" placeholder="End location">
-                <button class="route">Enter</button>
+                <div class="combine">
+                    <input class="end_point" type="text" placeholder="End location">
+                    <div class="autocomplete autocomplete2"></div>
+                </div>
+                <button class="route">Find Route</button>
             </form>
         </div>
         <div id="map"></div>
@@ -51,7 +52,8 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
-     <!-- leaflet search js  -->
+     <!-- leaflet routing machine js  -->
+     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
      
 </body>
 </html>

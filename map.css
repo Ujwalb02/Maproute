@@ -65,6 +65,7 @@ form button{
 }
 .end_point{
     background-image: url(location-pin.png);
+    z-index: 0;
 }
 .start_point{
     background-image: url(placeholder.png);
@@ -93,21 +94,46 @@ form button{
     align-items: center;
 }
 .autocomplete{
-    
+    z-index: 2;
+    padding: 5px 5px;
     position: absolute;
-    top:35px;
+    top:37px;
     border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
     
-
+}
+.autocomplete1 {
+    display: none;
+}
+.autocomplete2{
+    display: none;
+    top:58px;
 }
 .auto1{
     box-sizing: border-box;
+    /* box-sizing: border-box; */
     width:400px;
-    height:40px;
+    background-image: url('pin.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* height:40px; */
     /* border:1px solid red; */
     background-color: white;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(154, 151, 151);
     font-size: 1rem;
     font-family: 'Kanit', sans-serif;
-    padding : 8px 10px;
+    padding: 5px 3px;
+    padding-left: 45px;
+    
+}
+.auto1 h4 , .auto1 p{
+    margin: 0;
+}
+.auto1 h4{
+    font-family: 1rem;
+}
+.auto1 p{
+    padding-top: 4px;
+    font-size: 0.9rem;
 }
